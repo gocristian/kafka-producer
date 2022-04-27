@@ -22,7 +22,7 @@ public class KafkaProducer {
 
     public void sendBatchOfEvents() {
         for(int i = 0; i < 100; i++) {
-            sendEvent("k", "v".concat(String.valueOf(i)));
+            sendEvent("k".concat(String.valueOf(i)), "v".concat(String.valueOf(i)));
         }
     }
 }
